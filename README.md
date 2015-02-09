@@ -1,6 +1,6 @@
 docker image for the open source CMDB [i-doit](http://www.i-doit.org).
 
-== Build, then launch ==
+## Build, then launch
 
 ```bash
 # build the image
@@ -13,7 +13,7 @@ docker image for the open source CMDB [i-doit](http://www.i-doit.org).
 Point your brower to `http://localhost:<port>/i-doit` and complete the installation steps.
 
 
-== Pull from docker hub, then launch ==
+## Pull from docker hub, then launch
 
 ```bash
 # pull from docker hub
@@ -23,7 +23,7 @@ Point your brower to `http://localhost:<port>/i-doit` and complete the installat
 % sudo docker run -p <port>:80 -t i-doit 
 ```
 
-== Notes ==
+## Notes
 Can be used to explore `i-doit`'s functionality and for evaluation purposes. 
 The image is neither prepared nor tested for a production installation.
 
