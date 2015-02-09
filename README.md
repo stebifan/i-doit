@@ -10,7 +10,7 @@ docker image for the open source CMDB [i-doit](http://www.i-doit.org).
 % sudo docker run -p <port>:80 -t i-doit 
 ```
 
-Point your brower to `http://localhost:<port>/i-doit` and complete the installation steps.
+Point your browser to `http://localhost:<port>/i-doit/` and complete the installation steps.
 
 
 ## Pull from docker hub, then launch
