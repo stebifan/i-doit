@@ -40,10 +40,6 @@ COPY 000-default.conf /etc/apache2/sites-enabled/000-default.conf
 # expose i-doit webinterface running on port 80
 EXPOSE 80
 
-# script to startup i-doit 
-COPY i-doit-control.sh i-doit-control.sh
-RUN chmod +x i-doit-control.sh
-
 # install configuration file for supervisord
 COPY supervisord.conf /etc/supervisor/conf.d/supervisord.conf
 
