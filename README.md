@@ -4,7 +4,7 @@ docker image for the open source CMDB [i-doit](http://www.i-doit.org).
 
 ```bash
 # build the image
-% sudo docker build -t i-doit https://github.com/Gubaer/docker-i-doit
+% sudo docker build -t i-doit https://github.com/Gubaer/docker-i-doit.git
 
 # run the application. Replace <port> with a free port number on localhost.
 % sudo docker run -p <port>:80 -t i-doit 
@@ -20,7 +20,7 @@ Point your brower to `http://localhost:<port>/i-doit` and complete the installat
 % sudo docker pull gubaer/i-doit
 
 # run the application. Replace <port> with a free port number on localhost.
-% sudo docker run -p <port>:80 -t i-doit 
+% sudo docker run -p <port>:80 -t gubaer/i-doit 
 ```
 
 ## Notes
