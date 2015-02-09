@@ -32,7 +32,6 @@ RUN rm i-doit.zip
 RUN chmod +x /var/www/i-doit/idoit-rights.sh
 RUN cd /var/www/i-doit && ./idoit-rights.sh
 
-
 # apache2 configuration for the virtual host on port 80
 # includes the alias definition for '/i-doit'
 COPY 000-default.conf /etc/apache2/sites-enabled/000-default.conf
@@ -43,5 +42,4 @@ EXPOSE 80
 # install configuration file for supervisord
 COPY supervisord.conf /etc/supervisor/conf.d/supervisord.conf
 
-EXPOSE 80
 CMD ["/usr/bin/supervisord"]
