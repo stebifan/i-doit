@@ -5,15 +5,15 @@ COPY policy-rc.d /usr/sbin/policy-rc.d
 RUN apt-get update  
 RUN DEBIAN_FRONTEND=noninteractive apt-get install -y -q  \
 	apache2 \
-	libapache2-mod-php5 \
-	php7 \
-	php7-cli \
-	php7-xmlrpc \
-	php7-ldap \
-	php7-gd \
-	php7-mysql \
+	libapache2-mod-php7 \
+	php \
+	php-cli \
+	php-xmlrpc \
+	php-ldap \
+	php-gd \
+	php-mysql \
 	mcrypt \
-	php7-mcrypt \
+	php-mcrypt \
 	unzip \
 	wget \
 	supervisor
