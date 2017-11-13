@@ -6,14 +6,14 @@ RUN apt-get update
 RUN DEBIAN_FRONTEND=noninteractive apt-get install -y -q  \
 	apache2 \
 	libapache2-mod-php5 \
-	php5 \
-	php5-cli \
-	php5-xmlrpc \
-	php5-ldap \
-	php5-gd \
-	php5-mysql \
+	php7 \
+	php7-cli \
+	php7-xmlrpc \
+	php7-ldap \
+	php7-gd \
+	php7-mysql \
 	mcrypt \
-	php5-mcrypt \
+	php7-mcrypt \
 	unzip \
 	wget \
 	supervisor
