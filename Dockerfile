@@ -22,12 +22,6 @@ RUN DEBIAN_FRONTEND=noninteractive apt-get install -y -q  \
 RUN phpenmod mcrypt
 RUN a2enmod rewrite
 
-RUN mkdir /usr/local/etc/php/conf.d
-RUN touch /usr/local/etc/php/conf.d/uploads.ini \
-    && echo "upload_max_filesize = 32M;" >> /usr/local/etc/php/conf.d/uploads.ini \
-    && echo "max_input_vars = 100000;" >> /usr/local/etc/php/conf.d/uploads.ini \
-    && echo "post_max_size = 32M;" >> /usr/local/etc/php/conf.d/uploads.ini
-
 RUN mkdir /var/www/i-doit 
 
 # download i-doit 1.9 and upack it
