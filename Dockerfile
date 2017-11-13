@@ -23,8 +23,8 @@ RUN php5enmod mcrypt
 
 RUN mkdir /var/www/i-doit 
 
-# download i-doit 1.8 and upack it
-RUN wget -O i-doit.zip http://sourceforge.net/projects/i-doit/files/i-doit/1.8/idoit-open-1.8.zip/download
+# download i-doit 1.9 and upack it
+RUN wget -O i-doit.zip https://sourceforge.net/projects/i-doit/files/latest/download
 RUN unzip i-doit.zip -d /var/www/i-doit
 RUN rm i-doit.zip
 
