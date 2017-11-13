@@ -14,7 +14,6 @@ RUN DEBIAN_FRONTEND=noninteractive apt-get install -y -q  \
 	php5-mysql \
 	mcrypt \
 	php5-mcrypt \
-	mysql-server \
 	unzip \
 	wget \
 	supervisor
