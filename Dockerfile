@@ -18,7 +18,7 @@ RUN DEBIAN_FRONTEND=noninteractive apt-get install -y -q  \
 	wget \
 	supervisor
 
-RUN php5enmod mcrypt
+RUN phpenmod mcrypt
 
 RUN mkdir /var/www/i-doit 
 
