@@ -9,6 +9,7 @@ RUN DEBIAN_FRONTEND=noninteractive apt-get install -y -q  \
 	php \
 	php-cli \
 	php-xmlrpc \
+	php-xml \
 	php-ldap \
 	php-gd \
 	php-mysql \
@@ -19,6 +20,12 @@ RUN DEBIAN_FRONTEND=noninteractive apt-get install -y -q  \
 	supervisor
 
 RUN phpenmod mcrypt
+RUN a2enmod rewrite
+
+RUN touch /usr/local/etc/php/conf.d/uploads.ini \
+    && echo "upload_max_filesize = 32M;" >> /usr/local/etc/php/conf.d/uploads.ini \
+    && echo "max_input_vars = 100000;" >> /usr/local/etc/php/conf.d/uploads.ini \
+    && echo "post_max_size = 32M;" >> /usr/local/etc/php/conf.d/uploads.ini
 
 RUN mkdir /var/www/i-doit 
 
