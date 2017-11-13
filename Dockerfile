@@ -5,7 +5,7 @@ COPY policy-rc.d /usr/sbin/policy-rc.d
 RUN apt-get update  
 RUN DEBIAN_FRONTEND=noninteractive apt-get install -y -q  \
 	apache2 \
-	libapache2-mod-php7 \
+	libapache2-mod-php7.0 \
 	php \
 	php-cli \
 	php-xmlrpc \
