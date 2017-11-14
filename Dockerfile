@@ -36,7 +36,7 @@ RUN cd /var/www/i-doit && ./idoit-rights.sh
 # apache2 configuration for the virtual host on port 80
 # includes the alias definition for '/i-doit'
 COPY 000-default.conf /etc/apache2/sites-enabled/000-default.conf
-
+RUN echo "php_value max_input_vars 10000" >> /var/www/i-doit/.htaccess
 # expose i-doit webinterface running on port 80
 EXPOSE 80
 
